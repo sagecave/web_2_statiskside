@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produkter</title>
+    <title>Produkt Liste</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/layout.css">
 </head>
@@ -12,16 +12,50 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="col_row">
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="kategori.html">Kategori</a></li>
                 <li><a href="produkt.html">Produkter</a></li>
-                <li><a href="produktliste.html">produkt liste</a></li>
+                <li><a href="produktliste.html">Produkt liste</a></li>
 
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="products_Info grid_1-1">
+            <div class="info_img">
+                <img src="https://kea-alt-del.dk/t7/images/webp/1000/1533.webp" alt="weew">
+            </div>
+            <div class="infor_tekst">
+                <div class="zero_top">
+                    <h2>Red t-shirt</h2>
+                    <p>150 kr,-</p>
+                </div>
+                <div>
+                    <p>This T-shirt from Danish Puma is designed with a unique motif in a print. It has one
+                        slightly oversized and super comfortable fit.</p>
+                </div>
+                <div>
+                    <h3>Color: <b>Red</b></h3>
+                    <div class="zero_top_color">
+                        <button class="red"></button>
+                        <button class="black"></button>
+                        <button class="green"></button>
+                    </div>
+                </div>
+                <div class="grid_1-1-down">
+                    <button class="størrelse_knap">Choose size
+                    </button>
+                    <button class="læg_i_kurv">add to the basket
+                    </button>
+                    <button class="find_butik">find store
+                    </button>
+                </div>
+                <p>Bestil nu og få leveret d. <b>2. feb. - 5. feb.</b></p>
+            </div>
+
+        </section>
+    </main>
     <footer></footer>
     <script src="./js/scripts.js"></script>
 </body>

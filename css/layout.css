@@ -1,0 +1,43 @@
+.grid_1-1-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+.grid_1-1-1_kategori{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+   
+}
+
+.grid_1-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.grid_1-1-down{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-row: 2fr 1fr;
+}
+.col_row{
+    display: flex;
+    flex-direction:row;
+    justify-content: end;
+    
+    
+    
+}
+.col_row_start{
+    display: flex;
+    flex-direction:row;
+    justify-content: start;
+    
+    
+    
+}
+
+.col_center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -3,4 +3,217 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: koulen;
+    src: url(../fonts/Koulen-Regular.ttf);
+}
+@font-face {
+    font-family: abel;
+    src: url(../fonts/Abel-Regular.ttf);
+}
+body{
+    background-color: #000044;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'koulen';
+    color: #fff;
+}
+.small_img img:hover{
+    border: 2px solid black;
+}
+.small_img{
+    z-index: 2;
+}
+p,a{
+    font-family: 'abel';
+    color: #fff;
+}
+.rabat{
+    color: #AE2D56;
+}
+.udsolgt{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(50%);
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+.udsolgt h3{
+    color:rgb(46, 46, 46);
+    position: absolute;
+    font-size: 3rem;
+    rotate: 310deg;
+    top: 45%;
+}
+.produkts img{
+    width: 18em;
+}
+.produkts ul li{
+    list-style-type: none;
+    
+}
+.produkts a{
+    text-decoration: none;
+  
+}
+.produkts a:hover img{
+   box-shadow: 10px 10px 30px rgb(94, 94, 94);
+   
+   
+   
+    
+}
+.products_header h1{
+    font-size: 3em;
+}
+.display_none{
+    display: none;
+}
+.produkts a:hover .display_none{
+   display: block;
+   
+    
+}
 
+.variant ul li{
+    display: block;
+    padding-right: 1em;
+}
+.small_img img{
+    width: 15%;
+}
+nav ul li{
+    list-style-type: none;
+    display: block;
+   
+   
+    
+ 
+}
+nav ul{
+    gap: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+  
+}
+nav ul li a:hover{
+    color: #AE2D56;
+    font-size: 1.2em;
+  
+}
+
+nav{
+   
+    height: 3em;
+    
+}
+
+.margin_sides{
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.produkt_section{
+    margin-top: 3%;
+    height: 130vh;
+}
+
+.info_img img{
+    width: 30em;
+    
+}
+
+.products_Info{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.red{
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    background-color: red;
+}
+
+.black{
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.green{
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    background-color: green;
+    
+}
+.størrelse_knap{
+    width: 100%;
+    height: 4em;
+    grid-column: 1/-1;
+    background-color: blue;
+    color:#fff ;
+   
+}
+.læg_i_kurv{
+    width: 100%;
+    height: 4em;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: black;
+    color:#fff ;
+}
+.find_butik{
+    width: 100%;
+    height: 4em;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #AE2D56;
+    color: #fff;
+}
+.products_Info {
+  margin-top: 4em;
+}
+.infor_tekst div{
+    margin-top: 3em;
+}
+.infor_tekst .zero_top{
+    margin-top: -0.5em;
+}
+.infor_tekst .zero_top_color{
+    margin-top: 0em;
+}
+
+.kategori_box a div{
+    background-color: #976273;
+    border: #AE2D56 solid 2px;
+    width: 20em;
+    height: 20em;
+    
+}
+.kategori{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.kategori_box a{
+    text-decoration: none;
+    text-align: center;
+   
+}
+.kategori_box a div p{
+    
+    position: relative;
+    top: 40%;
+    font-size: 3em;
+   
+}
+
+.box{
+    margin-top: 3em;
+}
