@@ -31,6 +31,17 @@ p,a{
 .rabat{
     color: #AE2D56;
 }
+.rabat_boks{
+    background-color:#AE2D56 ;
+    width: 3em;
+    height: 2em;
+    position: relative;
+    bottom: 2.28em;
+}
+.rabat_boks p{
+   text-align: center;
+   padding-top: 0.5em;
+}
 .udsolgt{
     -webkit-filter: grayscale(100%);
     filter: grayscale(50%);
@@ -157,7 +168,15 @@ nav{
     height: 4em;
     grid-column: 1/-1;
     background-color: blue;
+    border-color: transparent;
+    
     color:#fff ;
+   
+}
+.størrelse_knap:hover{
+
+    background-color: rgb(62, 62, 238);
+  
    
 }
 .læg_i_kurv{
@@ -165,8 +184,15 @@ nav{
     height: 4em;
     grid-column: 1;
     grid-row: 2;
-    background-color: black;
+    background-color: #751f3a;
+    border-color: transparent;
+    
     color:#fff ;
+}
+.læg_i_kurv:hover{
+  
+    background-color: #c45b7d;
+ 
 }
 .find_butik{
     width: 100%;
@@ -175,6 +201,12 @@ nav{
     grid-row: 2;
     background-color: #AE2D56;
     color: #fff;
+    border-color: transparent;
+}
+.find_butik:hover{
+   
+    background-color:#ba496d;
+    
 }
 .products_Info {
   margin-top: 4em;
@@ -216,4 +248,7 @@ nav{
 
 .box{
     margin-top: 3em;
+}
+.kategori_box a div:hover{
+    background-color: #AE2D56;
 }
