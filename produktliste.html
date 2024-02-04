@@ -219,38 +219,39 @@
 
 </html>
 
-<template class="beer_template">
-    <div class="produkts col_column ">
+<template class="produkt_template">
+    <div class="produkt_div produkts col_column ">
         <a class="img_link" href="">
-            <div class="udsolgt">
-                <img src="https://kea-alt-del.dk/t7/images/webp/1000/1533.webp " alt=" blå og sort trænings tøj">
-                <h3>Out of stock</h3>
+            <div class="udsolgt produkt_img_container">
+                <img class="produkt_img" src="https://kea-alt-del.dk/t7/images/webp/1000/1533.webp "
+                    alt=" blå og sort trænings tøj">
+                <h3 class="produkt_outOfStock">Out of stock</h3>
             </div>
             <div class="rabat_boks">
-                <p>10%</p>
+                <p class="produkt_rabt">10%</p>
             </div>
 
-            <div class="variant display_none ">
-                <ul class="col_row_start">
+            <div class="variant display_none produkt_farve_container">
+                <ul class="col_row_start produkt_farverUl">
                     <li>Red</li>
                     <li>Black</li>
                     <li>Green</li>
                 </ul>
             </div>
-            <div class="display_none small_img udsolgt">
+            <div class="display_none small_img udsolgt produkt_andreVariant">
                 <img src="https://kea-alt-del.dk/t7/images/webp/1000/1533.webp " alt="">
                 <img src="https://kea-alt-del.dk/t7/images/webp/1000/1533.webp " alt="">
                 <img src="https://kea-alt-del.dk/t7/images/webp/1000/1533.webp " alt="">
             </div>
 
-            <h2>Black sport top</h2>
-            <ul>
+            <h2 class="produkt_name">Black sport top</h2>
+            <ul class="produkt_pricUl">
 
                 <li>
-                    <p> 299,95 DKK,-</p>
+                    <p class="produkt_price"> 299,95 DKK,-</p>
                 </li>
                 <li>
-                    <p class="rabat">99,95 DKK,-</p>
+                    <p class="rabat produkt_rabatPrice">99,95 DKK,-</p>
                 </li>
 
             </ul>

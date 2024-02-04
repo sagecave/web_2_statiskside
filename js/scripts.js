@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", init);
 
 const beerURL = "https://api.punkapi.com/v2/beers";
 
-let beerTemplate;
+let produkt_template;
 let beerContainer;
 
 function init() {

@@ -37,6 +37,7 @@ p,a{
     height: 2em;
     position: relative;
     bottom: 2.28em;
+    margin-bottom: -2.2em;
 }
 .rabat_boks p{
    text-align: center;
