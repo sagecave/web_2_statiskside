@@ -1,39 +1,62 @@
 window.addEventListener("DOMContentLoaded", init);
 
-const beerURL = "https://api.punkapi.com/v2/beers";
+const produktURL = 'https://kea-alt-del.dk/t7/api/products';
+
 
 let produkt_template;
-let beerContainer;
+let produktListe_container;
 
 function init() {
   console.log("init");
+  
 
-  beerTemplate = document.querySelector(".beer_template");
-  console.log("beerTemplate", beerTemplate);
+  produkt_template = document.querySelector(".produkt_template");
+  console.log("produkt_template", produkt_template);
 
-  beerContainer = document.querySelector(".beer_container");
-  console.log("beer_container", beerContainer);
+  produktListe_container = document.querySelector(".produktListe_container");
+  console.log("produktListe_container", produktListe_container);
 
-  fetch(beerURL)
+  fetch(produktURL)
     .then(function (response) {
       return response.json();
     })
     .then(function (json) {
-      showBeers(json);
+      showProdukts(json);
     });
+   
 }
 
-function showBeers(beerJSON) {
-  let beerClone;
+function showProdukts(ProduktsJSON) {
+  let ProduktClone;
+    
+  ProduktsJSON.forEach((produkt) => {
+    console.log("produkt", produkt);
+    ProduktClone = produkt_template.cloneNode(true).content;
+    ProduktClone.querySelector(".produkt_img").src = `https://kea-alt-del.dk/t7/images/webp/1000/${produkt.id}.webp`;
+    ProduktClone.querySelector(".produkt_img").alt = `Picture of a ${produkt.productdisplayname} beer`;
+    ProduktClone.querySelector(".produkt_name").textContent = produkt.productdisplayname;
+    ProduktClone.querySelector(".produkt_price").textContent = `${produkt.price} kr,-`;
+    ProduktClone.querySelector(".link_produkt").href = `produkt.html?id=${produkt.id}`;
+    ProduktClone.querySelector(".produkt_rabt").textContent = `Rabat: ${produkt.discount} %`;
+    ProduktClone.querySelector(".produkt_rabatPrice").textContent = ` ${(produkt.price/100 * produkt.discount).toFixed(0)} kr,-`;
+    // ProduktClone.querySelector(".beer_tagline").textContent = beer.tagline;
+    // ProduktClone.querySelector(".beer_description").textContent = beer.description;
+    produktListe_container.appendChild(ProduktClone);
+    
+   
+        
+    // let rabatForsvind
+    // let stockForsvind
+    // document.querySelector(".produkt_outOfStock").textContent = stockForsvind
+    // document.querySelector(".produkt_rabt").textContent = rabatForsvind
+   
 
-  beerJSON.forEach((beer) => {
-    console.log("Beer", beer);
-    beerClone = beerTemplate.cloneNode(true).content;
-    beerClone.querySelector(".beer_image").src = beer.image_url;
-    beerClone.querySelector(".beer_image").alt = `Picture of a ${beer.name} beer`;
-    beerClone.querySelector(".beer_name").textContent = beer.name;
-    beerClone.querySelector(".beer_tagline").textContent = beer.tagline;
-    beerClone.querySelector(".beer_description").textContent = beer.description;
-    beerContainer.appendChild(beerClone);
+    // if (produkt.discount <= 0){
+    //     document.querySelector(".rabat_boks").classList.remove(".hidden_rabt")
+    // }
+
+   
+        
+    
   });
 }

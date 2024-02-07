@@ -33,7 +33,7 @@ p,a{
 }
 .rabat_boks{
     background-color:#AE2D56 ;
-    width: 3em;
+    width: 5em;
     height: 2em;
     position: relative;
     bottom: 2.28em;
@@ -57,7 +57,7 @@ p,a{
     top: 45%;
 }
 .produkts img{
-    width: 18em;
+    width: 15em;
 }
 .produkts ul li{
     list-style-type: none;
@@ -252,4 +252,12 @@ nav{
 }
 .kategori_box a div:hover{
     background-color: #AE2D56;
+}
+
+.hidden_stock{
+    display: none;
+}
+
+.hidden_rabt{
+    display: none;
 }
