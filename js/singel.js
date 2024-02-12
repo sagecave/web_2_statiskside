@@ -21,7 +21,10 @@ function visProdukt(produkt){
     document.querySelector(".info_img img").src = `https://kea-alt-del.dk/t7/images/webp/1000/${produkt.id}.webp`;
     document.querySelector(".info_img").alt = `Picture of a ${produkt.productdisplayname} beer`;
   
-    
+    if (produkt.soldout){
+        document.querySelector(".info_img").classList.add("udsolgt");
+        console.log("hej")
+    }
 
 }
 

@@ -39,6 +39,9 @@ p,a{
     bottom: 2.28em;
     margin-bottom: -2.2em;
 }
+.line_t{
+    text-decoration: line-through;
+}
 .rabat_boks p{
    text-align: center;
    padding-top: 0.5em;
